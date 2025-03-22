@@ -42,7 +42,7 @@ export function TermsAndConditions() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="bg-[#1a1a1a] max-w-lg w-full p-8 rounded-2xl shadow-xl border border-[#ff9211]/50"
+        className="bsg-[#1a1a1a] max-w-lg w-full p-8 rounded-2xl shadow-xl border border-[#ff9211]/50"
       >
         <h1 className="text-3xl font-bold text-[#ff9211] mb-6 text-center font-rubik">
           Terms & Conditions
