@@ -14,18 +14,11 @@ DevProof is a blockchain-powered platform that tracks and rewards developers for
 
 ## Technologies Used
 - **Frontend:** Vite, React.js, TailwindCSS, JavaScript
-- **Backend:** Node.js, Firebase, Hardhat
 - **Blockchain:** Solidity, Ether.js
 - **APIs:** GitHub REST API, Pollinations API
 - **Authentication:** GitHub OAuth
 - **Email Notifications:** NodeMailer
 
-## Project Links
-- **Frontend Repo:** [DevProof](https://github.com/manicdon7/DevProof/tree/main)
-- **Smart Contracts Repo:** [DevProof Contracts](https://github.com/manicdon7/devproof-contracts)
-- **Deployed Frontend:** [Dev Proof App](https://dev-proof.vercel.app/)
-- **Deployed Backend:** [Dev Proof Backend](https://dev-proof-backend.vercel.app/)
-- **Demo Video Playlist:** [YouTube](https://www.youtube.com/playlist?list=PLF-Pa-PLv0lrG_wJL9pVhvAFUuqLZXps5)
 
 ## How It Works
 1. Developers connect their GitHub and MetaMask wallets.
@@ -61,116 +54,8 @@ cd DevProof
 npm install
 npm run dev
 
-# Clone the smart contract repo
-git clone https://github.com/manicdon7/devproof-contracts.git
-cd devproof-contracts
-npm install
-npx hardhat compile
-```
-
 ### Running Locally
 1. Start the frontend:
    ```sh
    npm run dev
    ```
-2. Deploy smart contracts:
-   ```sh
-   npx hardhat run scripts/deploy.js --network <network-name>
-   ```
-3. Start backend services if needed.
-
-## License
-This project is licensed under the MIT License.
-
-## Folder Structure
-```
-DevProof/
-├─ client/
-│  ├─ components/
-│  │  ├─ BotButton.jsx
-│  │  ├─ ChatStorage.jsx
-│  │  ├─ ClickSpark.jsx
-│  │  ├─ CoreMate.jsx
-│  │  ├─ CustomConnectButton.jsx
-│  │  ├─ EmpowerSection.jsx
-│  │  ├─ FeaturedSection.jsx
-│  │  ├─ FuzzyText.jsx
-│  │  ├─ GithubProvider.jsx
-│  │  ├─ HeroSection.jsx
-│  │  ├─ HowItWorksSection.jsx
-│  │  ├─ JoinSection.jsx
-│  │  ├─ LeaderBoardSection.jsx
-│  │  ├─ navbar.jsx
-│  │  ├─ NewsLetterSection.jsx
-│  │  ├─ RotatingText.jsx
-│  │  ├─ SpotLightCard.jsx
-│  │  ├─ WhyChooseSection.jsx
-│  ├─ context/
-│  │  └─ index.jsx
-│  ├─ hooks/
-│  │  ├─ usePinata.js
-│  │  └─ useSigner.js
-│  ├─ json/
-│  │  └─ abi/
-│  │     ├─ RewardDistribution.json
-│  │     ├─ Staking.json
-│  │     └─ YieldPool.json
-│  ├─ pages/
-│  │  ├─ Dashboard.jsx
-│  │  ├─ GithubPermission.jsx
-│  │  ├─ Home.jsx
-│  │  ├─ LeaderBoard.jsx
-│  │  ├─ NotFound.jsx
-│  │  ├─ Rewards.jsx
-│  │  ├─ Stake.jsx
-│  ├─ public/
-│  │  ├─ fonts/
-│  │  │  ├─ Lexend[wght].ttf
-│  │  │  ├─ Rubik-Regular.ttf
-│  │  ├─ core.png
-│  │  ├─ devproof-logo.png
-│  │  ├─ vite.svg
-│  ├─ src/
-│  │  ├─ Api/
-│  │  │  └─ Github.js
-│  │  ├─ Providers/
-│  │  │  ├─ Protected.jsx
-│  │  │  ├─ RainbowKitProvider.jsx
-│  │  ├─ services/
-│  │  │  └─ githubServices.js
-│  │  ├─ App.jsx
-│  │  ├─ index.css
-│  │  ├─ main.jsx
-│  ├─ utils/
-│  │  └─ ContractIntegration.js
-│  ├─ .env
-│  ├─ .env.example
-│  ├─ .gitignore
-│  ├─ eslint.config.js
-│  ├─ firebase.config.js
-│  ├─ index.html
-│  ├─ LICENSE
-│  ├─ package-lock.json
-│  ├─ package.json
-│  ├─ README.md
-│  ├─ vercel.json
-│  └─ vite.config.js
-├─ server/
-│  ├─ lib/
-│  │  ├─ schema/
-│  │  │  └─ index.js
-│  │  ├─ Connect.config.js
-│  ├─ utils/
-│  │  ├─ classify.js
-│  │  ├─ coreMateUtils.js
-│  │  ├─ SendEmail.js
-│  │  ├─ Templates.js
-│  ├─ .env
-│  ├─ .gitignore
-│  ├─ index.js
-│  ├─ package-lock.json
-│  ├─ package.json
-│  ├─ vercel.json
-└─ README.md
-```
-
