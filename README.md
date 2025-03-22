@@ -47,11 +47,6 @@ DevProof is a blockchain-powered platform that tracks and rewards developers for
 - Enhancing security with advanced fraud detection.
 - Improving AI algorithms for better commit evaluation.
 
-## Team Members
-- **Manikandan**
-- **Naveen Rajan**
-- **Ganesh**
-
 ## Getting Started
 ### Prerequisites
 - Node.js installed
